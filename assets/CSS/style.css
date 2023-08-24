@@ -33,7 +33,6 @@ header p {
   margin-top: 20px;
 }
 
-
 footer {
   margin: 1.5rem;
   text-align: center;
@@ -56,9 +55,7 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-
 .card-body pre {
-
   white-space: pre-wrap;
   overflow: auto;
   tab-size: 4;
@@ -70,6 +67,10 @@ footer {
   align-items: center;
 }
 
+.card-body pre:active {
+  user-select: all;
+}
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -77,7 +78,6 @@ footer {
   min-height: 100%;
   padding: 2rem;
   color: var(--heliotrope);
-
 
   outline: 2px dashed var(--gin);
   outline-offset: -2px;
@@ -114,14 +114,11 @@ footer {
   box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
 }
 
-
- @media screen and (min-width: 768px) {
-
+@media screen and (min-width: 768px) {
   .card {
     flex: 0 0 50%;
     max-width: 50%;
   }
-
 
   .card:last-child {
     flex-grow: 1;
